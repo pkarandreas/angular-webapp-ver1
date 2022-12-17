@@ -39,5 +39,8 @@ export class CoursesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onCreateCourse(){
+    this.route.navigate(['addEditCourse']);
+  }
 
 }

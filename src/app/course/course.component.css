@@ -1,0 +1,9 @@
+.contStyle{
+    background-color: lightgray;
+}
+label{
+    font-size: larger;
+}
+caption{
+    caption-side: top;
+}

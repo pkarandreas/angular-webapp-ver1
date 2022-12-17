@@ -23,4 +23,9 @@ export class CoursesSrvService {
     this.http.delete(`${this.apiUrl}/${id}`,{headers:this.coursesHeader}).toPromise().then();
   }
 
+  public postCourse(course:CourseClass):boolean{
+    this.http.post(`${this.apiUrl}`,course).subscribe(data=>{console.log(data)});
+    return true;
+  }
+
 }

@@ -1,6 +1,8 @@
 <div class="container m-4 border border-primary rounded mx-auto">
     <div class="row justify-content-center align-items-center g-2 p-4">
-     <div class="col-md-6"><button class="btn btn-primary">Add New Course</button></div>
+     <div class="col-md-6">
+      <button class="btn btn-primary" (click)="onCreateCourse()">Add New Course</button>
+    </div>
      <div class="col-md-6 bg-info mx-auto p-3 text-center"><h3>Total Courses :{{courses.length}}</h3></div>
     </div>
     <div class="row justify-content-center align-items-center g-2 p-4">

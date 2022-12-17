@@ -12,7 +12,8 @@ import { RoutingModule } from './MyModules/routing/routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { CourseComponent } from './course/course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +24,16 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     FooterComponent,
     CoursesComponent,
-    FormComponent
+    FormComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
